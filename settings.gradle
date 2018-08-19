@@ -1,0 +1,3 @@
+rootProject.name = 'net.ebt.imagelibrary'
+include 'net.ebt.imagelibrary.core'
+
