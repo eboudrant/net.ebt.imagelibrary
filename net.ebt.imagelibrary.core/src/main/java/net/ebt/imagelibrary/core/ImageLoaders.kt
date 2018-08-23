@@ -2,9 +2,13 @@ package net.ebt.imagelibrary.core
 
 import java.io.File
 
-class ImageLoaders(val root: File) {
+class ImageLoaders(private val root: File) {
 
     private val loaders = mutableListOf<ImageLoader>()
+
+    init {
+        System.out.println("Loading $root")
+    }
 
     fun add(loader: ImageLoader) {
         loaders.add(loader)
